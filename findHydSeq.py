@@ -1,5 +1,7 @@
 import re
 
+#Program to parse FASTA file and give output shown at bottom
+
 with open("test.fasta") as file:
     file_contents=file.read()
     matches=re.findall(r">.*\n.*\n",file_contents)
